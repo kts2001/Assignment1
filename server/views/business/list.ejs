@@ -1,0 +1,53 @@
+
+
+
+  
+<%- include ../partials/header.ejs%>
+<div class="container">
+       <h1>Business Contact List </h1>
+    <a href="/business-list/add"  role="button">
+        Add a New Contact
+    </a>
+
+<table>
+    
+    <tr>
+		<td style="width: 239px"><em><b>Name</b></em></td>
+		<td style="width: 253px"><em><b>Phone #</b></em></td>
+		<td style="width: 285px"><em><b>E-mail</b></em></td>
+		<td style="width: 200px">&nbsp;</td>
+		<td style="width: 200px">&nbsp;</td>
+	</tr>
+
+    <% for(let count = 0; count < ContactList.length; count++) { %>
+    <tr>
+		<td style="width: 239px"><%= ContactList[count].Name %></td>
+		<td style="width: 253px"><%= ContactList[count].Phone %></td>
+		<td style="width: 285px"><%= ContactList[count].Email %></td>
+		<td style="width: 200px">
+            <a href="/business-list/edit/<%= ContactList[count]._id %>" >
+                Edit Contact </a></td>
+        <td style="width: 200px">
+                    <a href="/business-list/delete/<%= ContactList[count]._id %>" >
+                      Delete Contact</a>
+                </td>
+		
+        <% } %>
+	</tr>
+
+    
+</table>
+<br>
+<br>
+<br>
+<br>
+</div>
+<%- include ../partials/footer.ejs%>
+
+
+  
+
+
+
+
+

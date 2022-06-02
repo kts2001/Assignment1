@@ -1,0 +1,24 @@
+
+
+
+<%- include ../partials/header.ejs %>
+<link href="./stylesheets/index.css" rel="stylesheet" type="text/css">
+<div class="container">
+
+<form method="post">
+    <br>
+	Name :&nbsp;&nbsp;  <input type="text" placeholder="Enter Contact Name " name="Name" required><br>
+	Phone# :<input type="text" placeholder="Enter Contact's Phone#"   name="Phone" required>  
+   <br>E-mail&nbsp; :<input type="text" placeholder="Enter Contact's E-mail Address" name="Email" required>
+	<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+    
+    <input name="submit" style="width: 124px" type="submit" value="Submit"> &nbsp;
+    <input name="clear" style="width: 124px" type="reset" value="Clear All"><br>
+    <a href="/business-list" >
+        Cancel</a>
+<br></form><br>
+<br>
+</div>
+   
+<%- include ../partials/footer.ejs %>

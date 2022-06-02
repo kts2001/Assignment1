@@ -1,0 +1,32 @@
+header {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #AFD275;
+}
+footer {
+	background-color: #AFD275;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-style: italic;
+	color: #CC0066;
+	text-align: center;
+}
+#division {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eae7dc;
+	border: medium solid #808000;
+	box-shadow: 5px 5px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	background-color: #EFE2BA;
+	right: auto;
+	left: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+#navbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #CC0066;
+}
